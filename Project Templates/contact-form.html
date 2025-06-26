@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Form - Ope</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"/>
+  <style>
+    .contact__form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #1f1f1f;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .contact__input {
+      width: 100%;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      background: #2d2d2d;
+      color: #fff;
+    }
+
+    .contact__input:focus {
+      outline: 2px solid #00adb5;
+    }
+
+    .error {
+      border: 1px solid red;
+    }
+
+    .error-message {
+      color: red;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact__button {
+      background-color: #00adb5;
+      color: #fff;
+      font-size: 1rem;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact__button:hover {
+      background-color: #007f85;
+    }
+  </style>
+</head>
+<body>
+
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div><a href="../index.html" class="nav__logo">Ope</a></div>
+    </nav>
+  </header>
+
+  <!--===== CONTACT FORM SECTION =====-->
+  <main class="l-main">
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact Me</h2>
+
+      <div class="contact__container bd-grid">
+        <form id="contactForm" class="contact__form" novalidate>
+          <input type="text" id="name" class="contact__input" placeholder="Your Name" />
+          <div id="nameError" class="error-message"></div>
+
+          <input type="email" id="email" class="contact__input" placeholder="Your Email" />
+          <div id="emailError" class="error-message"></div>
+
+          <textarea id="message" rows="7" class="contact__input" placeholder="Your Message"></textarea>
+          <div id="messageError" class="error-message"></div>
+
+          <input type="submit" class="contact__button" value="Send Message" />
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--===== FOOTER =====-->
+  <footer class="footer">
+    <p class="footer__title">Ope's Contact Page</p>
+    <p class="footer__copy">&#169; Ope. All rights reserved.</p>
+  </footer>
+
+  <!--===== FORM VALIDATION SCRIPT =====-->
+  <script>
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+      const message = document.getElementById("message");
+
+      const nameError = document.getElementById("nameError");
+      const emailError = document.getElementById("emailError");
+      const messageError = document.getElementById("messageError");
+
+      let valid = true;
+
+      nameError.textContent = "";
+      emailError.textContent = "";
+      messageError.textContent = "";
+
+      name.classList.remove("error");
+      email.classList.remove("error");
+      message.classList.remove("error");
+
+      if (name.value.trim() === "") {
+        nameError.textContent = "Name is required.";
+        name.classList.add("error");
+        valid = false;
+      }
+
+      if (email.value.trim() === "" || !email.value.includes("@")) {
+        emailError.textContent = "Valid email is required.";
+        email.classList.add("error");
+        valid = false;
+      }
+
+      if (message.value.trim().length < 10) {
+        messageError.textContent = "Message must be at least 10 characters.";
+        message.classList.add("error");
+        valid = false;
+      }
+
+      if (valid) {
+        alert("Thank you! Your message has been sent.");
+        form.reset();
+      }
+    });
+  </script>
+</body>
+</html>

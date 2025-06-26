@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Opeyemi Apara – Frontend Developer creating beautiful and responsive websites.">
+<meta name="keywords" content="Web Developer, Portfolio, Frontend, HTML, CSS, JavaScript, Nigeria">
+<meta name="author" content="Opeyemi Apara opethegifted">
+
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+
+  <title>Ope - Web Developer Portfolio</title>
+</head>
+<body>
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <button class="toggle-button" onclick="toggleMode()" id="modeButton">
+        <i class="bx bx-moon" id="modeIcon"></i>
+      </button>
+
+      <div>
+        <a href="#" class="nav__logo">Ope</a>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <h1 class="home__title">Hi,<br />I'm <span class="home__title-color">Ope</span><br />Web Developer</h1>
+        <a href="#contact" class="button">Let's Work</a>
+      </div>
+
+      <div class="home__social">
+        <a href="#" class="home__social-icon"><i class="bx bxl-linkedin"></i></a>
+        <a href="#" class="home__social-icon"><i class="bx bxl-github"></i></a>
+        <a href="#" class="home__social-icon"><i class="bx bxl-twitter"></i></a>
+      </div>
+
+      <div class="home__img">
+        <svg class="home__blob" viewBox="0 0 479 467">
+          <mask id="mask0" mask-type="alpha">
+            <path d="..."/>
+          </mask>
+          <g mask="url(#mask0)">
+            <path d="..."/>
+            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png" />
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    
+
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about__container bd-grid">
+    
+    <!-- SVG Shape + Image -->
+    <div class="about__img-wrapper">
+      <svg class="about__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#A1C4FD" d="M45.8,-57.6C59.1,-47.9,70,-32.8,70.2,-18.5C70.5,-4.1,60.1,9.5,51.4,20.6C42.7,31.7,35.7,40.4,25.9,50.6C16.2,60.9,3.6,72.7,-8.4,75.2C-20.5,77.6,-32,70.8,-41.9,61.2C-51.8,51.6,-60.1,39.2,-65.5,25.4C-70.9,11.5,-73.4,-4,-66.2,-16.6C-59,-29.2,-42.1,-38.9,-27.2,-48.8C-12.3,-58.7,0.6,-68.9,14.5,-68.8C28.4,-68.7,42.5,-58.4,45.8,-57.6Z" transform="translate(100 100)" />
+      </svg>
+
+      <img src="assets/img/screenshot.png" alt="Ope" class="about__img" />
+
+    </div>
+
+    <!-- Text Content -->
+    <div class="about__content">
+      <h2 class="about__subtitle">I'm Ope</h2>
+      <p class="about__text">
+        A passionate and creative web developer who loves building sleek, mobile-first websites
+        and helping people and businesses look amazing online. From landing pages to full custom sites,
+        I bring ideas to life with clean code, thoughtful design, and strong user experiences.
+      </p>
+      <blockquote class="about__quote">“Code is like humor. When you have to explain it, it’s bad.” 😄</blockquote>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-----why choose us----->
+    <section class="features section" id="features">
+  <h2 class="section-title">Why Choose Us</h2>
+  <div class="features__grid bd-grid">
+    <div class="feature__item">
+      <i class="bx bx-smile feature__icon"></i>
+      <h3>Friendly Experts</h3>
+    </div>
+    <div class="feature__item">
+      <i class="bx bx-leaf feature__icon"></i>
+      <h3>Modern Products</h3>
+    </div>
+    <div class="feature__item">
+      <i class="bx bx-wallet feature__icon"></i>
+      <h3>Affordable Packages</h3>
+    </div>
+    <div class="feature__item">
+      <i class="bx bx-spa feature__icon"></i>
+      <h3>Relaxing Vibe</h3>
+    </div>
+  </div>
+</section>
+
+
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills__container bd-grid">
+        <div>
+          <h2 class="skills__subtitle">Professional Skills</h2>
+          <p class="skills__text">I specialize in responsive, fast-loading websites that look great on any device and help users take action.</p>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-html5 skills__icon"></i>
+              <span class="skills__name">HTML5</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-css3 skills__icon"></i>
+              <span class="skills__name">CSS3</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-javascript skills__icon"></i>
+              <span class="skills__name">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="assets/img/work3.jpg" alt="" class="skills__img" />
+        </div>
+      </div>
+    </section>
+
+    <!--===== PROJECTS / WORK =====-->
+    <section class="work section" id="work">
+      <h2 class="section-title">Projects</h2>
+<div class="work__container bd-grid">
+
+  <div class="project-card">
+    <h3 class="project-title">Local Business Landing Page</h3>
+    <p class="project-description">A clean, modern landing page for local businesses.</p>
+    <a href="https://github.com/opethegifted/Local-Business-Landing-Page" target="_blank" class="button">View Code</a>
+  </div>
+
+  <div class="project-card">
+    <h3 class="project-title">Personal Blog</h3>
+    <p class="project-description">A stylish blog layout for sharing thoughts, articles, and tutorials.</p>
+    <a href="https://github.com/opethegifted/Personal-Blog" target="_blank" class="button">View Code</a>
+  </div>
+
+  <div class="project-card">
+    <h3 class="project-title">Contact Form</h3>
+    <p class="project-description">A simple, elegant contact form you can use with FormSubmit.</p>
+    <a href="https://github.com/opethegifted/contact-form-" target="_blank" class="button">View Code</a>
+  </div>
+
+  <div class="project-card">
+    <h3 class="project-title">Dark Mode Toggle</h3>
+    <p class="project-description">A dark/light mode switcher for modern UI flexibility.</p>
+    <a href="https://github.com/opethegifted/dark-mode-toggle-" target="_blank" class="button">View Code</a>
+  </div>
+
+  <div class="project-card">
+    <h3 class="project-title">Image Gallery</h3>
+    <p class="project-description">A responsive image gallery with hover effects and clean layout.</p>
+    <a href="https://github.com/opethegifted/Image-Gallery" target="_blank" class="button">View Code</a>
+  </div>
+
+  <div class="project-card">
+    <h3 class="project-title">SaaS Landing Page</h3>
+    <p class="project-description">A professional SaaS landing page to promote software services.</p>
+    <a href="https://github.com/opethegifted/SaaS-Landing-Page" target="_blank" class="button">View Code</a>
+  </div>
+
+</div>
+
+    </section>
+
+    <!--===== CONTACT =====-->
+
+     <section class="contact-info section">
+  <h2 class="section-title">Get in Touch</h2>
+  <div class="contact-info__container bd-grid">
+    <div class="contact-info__item">
+      <i class='bx bx-map'></i>
+      <h3>Location</h3>
+      <p>Lagos, Nigeria</p>
+    </div>
+    <div class="contact-info__item">
+      <i class='bx bx-envelope'></i>
+      <h3>Email</h3>
+      <p>daparaopeyemi@gmail.com</p>
+    </div>
+    <div class="contact-info__item">
+      <i class='bx bx-phone'></i>
+      <h3>Phone</h3>
+      <p>+234 708 296 5847</p>
+    </div>
+  </div>
+</section>
+
+
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact__container bd-grid">
+        <form action="https://formsubmit.co/daparaopeyemi@gmail.com" method="POST" class="contact__form">
+  <input type="text" name="name" placeholder="Name" class="contact__input" required />
+  <input type="email" name="email" placeholder="Email" class="contact__input" required />
+  <textarea name="message" placeholder="Your Message" class="contact__input" rows="6" required></textarea>
+
+  <!-- Optional hidden inputs -->
+  <input type="hidden" name="_subject" value="New message from portfolio site">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="submit" value="Send Message" class="contact__button button" />
+</form>
+
+      </div>
+    </section>
+  </main>
+
+  <!--===== FOOTER =====-->
+  <footer class="footer">
+    <p class="footer__title">Ope</p>
+    <div class="footer__social">
+      <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+      <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+      <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+    </div>
+    <p class="footer__copy">&#169; Ope. All rights reserved</p>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

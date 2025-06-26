@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dark Mode Toggle - Ope</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"/>
+  <style>
+    .toggle-button {
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      font-size: 18px;
+      background: #222;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.3s;
+    }
+
+    .dark-mode .toggle-button {
+      background: #eee;
+      color: #111;
+    }
+  </style>
+</head>
+<body>
+
+  <!--===== TOGGLE BUTTON =====-->
+  <button class="toggle-button" onclick="toggleMode()" id="modeButton">
+    <i class="bx bx-moon" id="modeIcon"></i> Toggle Mode
+  </button>
+
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div><a href="../index.html" class="nav__logo">Ope</a></div>
+    </nav>
+  </header>
+
+  <!--===== CONTENT =====-->
+  <main class="l-main">
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <h1 class="home__title">Dark Mode<br><span class="home__title-color">Toggle</span> Demo</h1>
+        <p>This demo shows how to switch between light and dark modes using JavaScript and CSS overrides.</p>
+        <a href="../index.html" class="button">Back to Portfolio</a>
+      </div>
+      <div class="home__img">
+        <img src="../assets/img/work3.jpg" class="skills__img" alt="Dark Mode Preview" />
+      </div>
+    </section>
+  </main>
+
+  <!--===== FOOTER =====-->
+  <footer class="footer">
+    <p class="footer__title">Dark Mode Demo</p>
+    <p class="footer__copy">&#169; Ope. All rights reserved.</p>
+  </footer>
+
+  <!--===== SCRIPT =====-->
+  <script>
+    function toggleMode() {
+      const body = document.body;
+      const icon = document.getElementById("modeIcon");
+
+      body.classList.toggle('dark-mode');
+
+      if (body.classList.contains('dark-mode')) {
+        icon.className = "bx bx-sun";
+      } else {
+        icon.className = "bx bx-moon";
+      }
+    }
+  </script>
+
+</body>
+</html>

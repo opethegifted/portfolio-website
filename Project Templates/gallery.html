@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="C:\Users\USER\Downloads\ope_web_dev_side_hustle\Portfolio Website\assets\css\styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"/>
+  <style>
+    .gallery__container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .gallery__img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery__img:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery__title {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div><a href="../index.html" class="nav__logo">Ope</a></div>
+    </nav>
+  </header>
+
+  <!--===== GALLERY =====-->
+  <main class="l-main">
+    <h2 class="gallery__title">Design & Project Gallery</h2>
+    <section class="gallery__container">
+      <img src="../assets/img/photo_2024-05-04_19-36-44.jpg" class="gallery__img" alt="Project 1" />
+      <img src="../assets/img/photo_2024-05-04_19-36-53.jpg" class="gallery__img" alt="Project 2" />
+      <img src="../assets/img/photo_2024-05-04_19-37-17.jpg" class="gallery__img" alt="Project 3" />
+      <img src="../assets/img/photo_2024-05-04_19-37-31.jpg" class="gallery__img" alt="Project 4" />
+      <img src="../assets/img/photo_2024-05-04_19-37-58.jpg" class="gallery__img" alt="Project 5" />
+      <img src="../assets/img/photo_2024-05-04_19-38-05.jpg" class="gallery__img" alt="Project 6" />
+    </section>
+  </main>
+
+  <!--===== FOOTER =====-->
+  <footer class="footer">
+    <p class="footer__title">Ope's Gallery</p>
+    <p class="footer__copy">&#169; Ope. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

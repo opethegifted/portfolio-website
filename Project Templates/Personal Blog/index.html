@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Blog - Ope</title>
+  <link rel="stylesheet" href="C:\Users\USER\Downloads\ope_web_dev_side_hustle\Portfolio Website\assets\css\styles.scss">
+  <link rel="stylesheet" href="C:\Users\USER\Downloads\ope_web_dev_side_hustle\Portfolio Website\assets\css\styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"/>
+
+</head>
+<body>
+
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div><a href="../index.html" class="nav__logo">Ope</a></div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#posts" class="nav__link">Posts</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+
+    <!--===== HERO / INTRO =====-->
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <h1 class="home__title">Welcome to<br><span class="home__title-color">Ope's Blog</span><br>Where ideas live</h1>
+        <a href="#posts" class="button">Read Latest</a>
+      </div>
+      <div class="home__img">
+        <img src="../assets/img/work2.jpg" alt="blog" class="skills__img" />
+      </div>
+    </section>
+
+    <!--===== BLOG POSTS =====-->
+    <section class="skills section" id="posts">
+      <h2 class="section-title">Latest Posts</h2>
+      <div class="skills__container bd-grid">
+        <div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bx-pencil skills__icon"></i>
+              <span class="skills__name">The Day I Almost Gave Up on Web Dev</span>
+            </div>
+            <p class="skills__text">A short personal story on burnout and bouncing back. 💪</p>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bx-pencil skills__icon"></i>
+              <span class="skills__name">Top 5 Free Resources I Use Daily</span>
+            </div>
+            <p class="skills__text">From DevDocs to FontAwesome — tools every developer should know.</p>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bx-pencil skills__icon"></i>
+              <span class="skills__name">Client Horror Stories 😱</span>
+            </div>
+            <p class="skills__text">Light-hearted take on tough freelance moments.</p>
+          </div>
+        </div>
+
+        <div>
+          <img src="../assets/img/work4.jpg" alt="" class="skills__img" />
+        </div>
+      </div>
+    </section>
+
+    <!--===== ABOUT BLOG =====-->
+    <section class="about section" id="about">
+      <h2 class="section-title">About This Blog</h2>
+      <div class="about__container bd-grid">
+        <div class="about__img">
+          <img src="../assets/img/about.jpg" alt="" />
+        </div>
+        <div>
+          <h2 class="about__subtitle">Why I Started Blogging</h2>
+          <p class="about__text">
+            I started this blog to document my journey as a developer, share the things I learn, and help others avoid the mistakes I made. Writing keeps me grounded, and hopefully inspires someone out there.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Say Hello</h2>
+      <div class="contact__container bd-grid">
+        <form action="" class="contact__form">
+          <input type="text" placeholder="Name" class="contact__input" />
+          <input type="email" placeholder="Email" class="contact__input" />
+          <textarea placeholder="Message" class="contact__input"></textarea>
+          <input type="submit" value="Send Message" class="contact__button button" />
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--===== FOOTER =====-->
+  <footer class="footer">
+    <p class="footer__title">Ope's Blog</p>
+    <div class="footer__social">
+      <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+      <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+      <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+    </div>
+    <p class="footer__copy">&#169; Ope. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
