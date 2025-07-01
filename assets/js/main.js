@@ -55,3 +55,18 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+
+const toggleBtn = document.querySelector("#darkModeToggle");
+const body = document.body;
+
+toggleBtn.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  localStorage.setItem("theme", body.classList.contains("dark") ? "dark" : "light");
+});
+
+window.onload = () => {
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark");
+  }
+};
